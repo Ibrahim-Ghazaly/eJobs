@@ -1,0 +1,477 @@
+
+	* {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        }
+        html {
+        scroll-behavior: smooth;
+        }
+        body {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #404040;
+        line-height: 1.42857143;
+        }
+    
+        
+      .container {
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      a {
+        text-decoration: none;
+      }
+      /* ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      } */
+
+      /* x-small */
+      @media only screen and (max-width: 480px) {
+         .container{
+           padding-left: 15px;
+           padding-right: 15px;
+         }
+         .box-content{
+           font-size: 14px;
+         }
+
+         .title{
+        
+          font-size: 1rem;
+          font-weight: 700;
+       }
+       }
+      /* Small */
+      @media (min-width: 768px) {
+        .container {
+          width: 750px;
+        }
+      }
+      /* Medium */
+      @media (min-width: 992px) {
+        .container {
+          width: 970px;
+        }
+      }
+      /* Large */
+      @media (min-width: 1200px) {
+        .container {
+          width: 1170px;
+        }
+      }
+
+    .header{
+        width:100%;
+        height:100vh;
+        position: relative;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(https://www.photohotel.com/cps/Image%2048.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display:flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+    }
+
+   .header .headline,.header .subheadline{
+     color: #fff;
+   }
+   .header .headline{
+     padding: 50px 0;
+      font-size: 1.3rem;
+   }
+   .header .subheadline{
+    font-size: 1.1rem;
+   }
+
+   @media only screen and (max-width: 768px) {
+    .header .headline, .header .subheadline{
+      font-size: 1rem;
+     }
+}
+
+   @media only screen and (max-width: 480px) {
+    .header .headline, .header .subheadline{
+     
+      text-align: left;
+     }
+}
+
+
+   /* start second section  */
+   .second-section{
+     width: 100%;
+     padding: 30px 0;
+   
+   }
+
+   .second-section .container {
+     display: grid;
+     grid-template-columns: repeat(auto-fill,minmax(45%,1fr));
+     gap:40px
+   }
+   .second-section .container .box{
+    width: 100%;
+  }
+  .second-section .container .box .box-heading{
+    color:#1FB9D4;
+    text-transform: uppercase;
+    margin:0 0 10px 0;
+    text-align: left;
+  }
+
+  .second-section .container .box .list{
+     font-size: 18px;
+     padding-left: 20px;
+  
+  }
+
+  .second-section .container .box .box-content{
+    font-size: 18px;
+    margin-bottom: 20px;
+ 
+ }
+
+ .second-section .container .box img{
+   width: 100%;
+   max-width: 100%;
+
+}
+
+@media only screen and (max-width: 768px) {
+  .second-section .container {
+  
+    grid-template-columns: repeat(auto-fill,minmax(90%,1fr));
+    gap:20px
+  }
+}
+/* start section 3 */
+
+
+
+.section-three{
+  width: 100%;
+  padding: 20px 0;
+  background-color:#1FB9D4 ;
+  background-image: url("../images/first.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position:  right top;
+}
+
+ .title{
+   color:#fff;
+   text-align: center;
+   font-size: 1.7rem;
+   margin:20px 0;
+   font-weight: 800;
+}
+.section-three .container{
+ display:flex ;
+ align-items: center;
+ justify-content: space-between;
+ gap:20px
+}
+
+.section-three .container .box{
+   width:45%;
+   height: 100%;
+   
+ }
+
+ .section-three .container .box .section-three-img{
+  width:100%;
+  
+}
+
+.section-three .container .box .box-item{
+   display:flex ;
+   align-items: flex-start;
+   margin-bottom: 12px;
+   position: relative;
+}
+.section-three .container .box .box-item .image{
+  display: block;
+  width: 10%;
+  position: absolute;
+  top:-5px;
+  left:0;
+ 
+}
+
+.section-three .container .box .box-item .image img{
+  
+  width: 75%;
+
+}
+.section-three .container .box .box-item .box-content{
+  color: #fff;
+  font-size:18px;
+  text-indent: 50px;
+ 
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .section-three .container{
+    
+    flex-wrap: wrap;
+  
+   }
+   
+   .section-three .container .box{
+      width:90%;
+      
+    }
+
+    .section-three .container .box .box-item .image{
+     
+      width: 7%;
+      position: absolute;
+      top:-5px;
+      left:0;
+     
+    }
+    
+    .section-three .container .box .box-item .image img{
+      
+      width: 85%;
+    
+    }
+}
+
+@media only screen and (max-width: 480px) {
+  .section-three .container .box .box-item {
+   margin-bottom: 25px;
+    
+  }
+  .section-three .container .box .box-item .box-content{
+    font-size: 14px;
+    
+  }
+
+  .section-three .title{
+    font-size: 1.2rem;
+  }
+
+}
+
+/* start section four  */
+
+.section-four{
+  width: 100%;
+  padding: 20px 0;
+ 
+}
+
+
+.section-four .container{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(45%,1fr));
+    gap:20px
+  
+}
+
+.section-four .container .box{
+
+font-size: 18px;
+
+}
+.section-four .title{
+
+  color: #1FB9D4;
+
+}
+
+@media only screen and (max-width: 768px) {
+  .section-four  .container {
+  
+    grid-template-columns: repeat(auto-fill,minmax(90%,1fr));
+    gap:20px
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  .section-four .container .box {
+    font-size: 14px;
+    
+  }
+
+  .section-four .title{
+    font-size: 1.2rem;
+  }
+}
+
+/* start section five  */
+.section-five{
+  width: 100%;
+  padding:20px 0;
+  background-color: #1FB9D4;
+  background-image: url("../images/third.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position:  right top;
+}
+
+.section-five .container{
+  display:flex ;
+  align-items: center;
+  justify-content: space-between;
+  gap:20px
+ }
+ 
+ .section-five .container .box{
+    width:45%;
+    height: 100%;
+   
+  }
+ 
+  .section-five .container .box .box-item{
+    display:flex ;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    position: relative;
+ }
+
+ .section-five .container .box .box-item img{
+   width:10%;
+}
+
+.section-five .container .box .box-item .box-content{
+  color: #fff;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .section-five  .container {
+  
+    flex-wrap: wrap;
+  }
+
+  .section-five  .container .box{
+  
+    width: 90%;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  .section-five .container .box .box-item .box-content{
+
+    font-size: 14px;
+ 
+  }
+
+  .section-five .title{
+    font-size: 1.2rem;
+  }
+}
+/* start button section  */
+
+.button-section{
+  width: 100%;
+  padding: 20px 0;
+}
+
+.button-section a{
+  display: block;
+  width: fit-content;
+  margin: 20px auto 10px auto;
+  color: #fff;
+  background-color: #17a2b8;
+  padding: 10px 35px;
+  border-radius: 10px;
+  font-size: 40px;
+  font-weight: 400;
+  border: none;
+  box-shadow: 0px 0px 20px 2px rgb(254, 255, 255);
+  -webkit-box-shadow: 0px 0px 20px 2px rgb(254, 255, 255);
+  -moz-box-shadow: 0px 0px 20px 2px rgb(254, 255, 255);
+  transition: .5s;
+}
+
+.button-section a:hover{
+
+  background-color:#1FB9D4
+ 
+}
+
+
+.button-section p{
+  color:#6c757d; 
+  font-size: 20px;
+   text-align: center;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  .button-section a{
+    
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 25px;
+   
+  }
+}
+/* start footer  */
+
+.footer{
+  width: 100%;
+  padding: 30px 0;
+  background-color: #1FB9D4;
+  background-image: url("../images/third.png"),url("../images/fourth.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right top;
+}
+
+.footer .title{
+ font-weight: 600;
+ font-size: 30px;
+  
+}
+.footer .container{
+ display: grid;
+ grid-template-columns: repeat(auto-fill,minmax(80px,1fr));
+ justify-content: center;
+ align-items: center;
+ gap:10px;
+ margin: 40px 0 0 0;
+ width: 100%;
+}
+
+.footer .container img{
+  width: 100%;
+  border-radius: 50%;
+ }
+ 
+ @media only screen and (max-width: 480px) {
+
+
+  .footer .title{
+    font-size: 1.2rem;
+  }
+}
+
+/* @media only screen and (max-width: 768px) {
+
+
+  .footer .container{
+   
+    grid-template-columns: repeat(auto-fill,minmax(30%,1fr));
+   
+   }
+   
+} */
